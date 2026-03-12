@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--A title to the page-->
+        <title>Tele Mágica - Private Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Prevents the browser from saving a local copy and forces it to check with the server on each login-->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <!--Indicates that this is intended for compatibility with older browsers-->
+        <meta http-equiv="Pragma" content="no-cache">
+        <!--Explains that content is considered "expired" immediately upon loading, which prevents the use of old information from memory-->
+        <meta http-equiv="Expires" content="0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Main title on the screen-->
+        <h1 class="main-title">Profile</h1>
+        <!--Back button-->
+        <button id ="back_button" class = "back-button">Atrás</button>
+        <!--Create a side menu bar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Vuelvo a casa</a>
+            <a href="about.html">About tele mágica</a>
+            <a href="auth.html?mode=login">Login</a>
+            <a href="auth.html?mode=signup">Signup</a>
+            <a href="profile.html">Profile</a>
+            <a href="catalog.html?type=serie">Serie</a>
+            <a href="catalog.html?type=movie">Peliculas</a>
+            <a href="catalog.html?type=show">Espectáculos</a>
+        </div>
+        <span class="menu-bar" onclick="openNav()">&#9776;</span>
+        <div>
+            <!--Show the details-->
+            <p class="name-style"><strong>Full name: </strong> <span id="user-name">loads...</span></p>
+            <p class="email-style"><strong>Email:</strong> <span id="user-email">loads...</span></p>
+            <!--Logout button-->
+            <button id="logout_button" class="logout">Logout</button>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

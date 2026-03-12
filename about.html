@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--A title to the page-->
+        <title>Tele Mágica - About</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Main title on the screen-->
+        <h1 class = "main-title">La historia de la tele mágica</h1>
+        <!--Text about the web-->
+        <p style="max-width: 1500px; margin: auto; padding: 20px; font-size: 1.2em; font-family: 'Playfair Display', serif;">
+            ¡Hola a todos! Bienvenidos al sitio que los mantendrá pegados a la pantalla con todas las queridas telenovelas
+            argentinas que nos acompañaron en la infancia. Las telenovelas me han ayudado y me han enseñado mucho sobre mí
+            mismo y sobre la vida. Como muestra de gratitud, decidí combinar dos cosas que me apasionan: la programación y
+            las telenovelas. <br>
+            Me esforcé al máximo por traernos de vuelta este mundo mágico, pero de una manera más innovadora y diferente.
+            El sitio tiene telenovelas argentinas y Espectáculos de la serie (y también películas, si las hay). En resumen,
+            espero que disfruten de este sitio tanto como yo y que sigan soñando y siendo la mejor versión de sí mismos.
+            Recuerden siempre que detrás de las nubes el Cielo siempre es azul. <br>
+            PD: Hay todo tipo de referencias a series en el sitio. A ver si las encuentras. <br><br><br>
+        </p>
+        <!--Back button-->
+        <button id ="back_button" class = "back-button">Atrás</button>
+        <!--Create a side menu bar-->
+        <div id = "mySidenav" class = "sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Vuelvo a casa</a>
+            <a href="about.html">About tele mágica</a>
+            <a href="auth.html?mode=login">Login</a>
+            <a href="auth.html?mode=signup">Signup</a>
+            <a href="profile.html">Profile</a>
+            <a href="catalog.html?type=serie">Serie</a>
+            <a href="catalog.html?type=movie">Peliculas</a>
+            <a href="catalog.html?type=show">Espectáculos</a>
+        </div>
+        <span class = "menu-bar" onclick = "openNav()">&#9776;</span>
+        <script src="main.js"></script>
+    </body>
+</html>

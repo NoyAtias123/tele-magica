@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--A title to the page-->
+        <title>Tele Mágica - Login\Signup</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Main title on the screen-->
+        <h1 id = "title" class = "main-title">¡Hola!</h1>
+        <!--Back button-->
+        <button id ="back_button" class = "back-button">Atrás</button>
+        <!--Create a side menu bar-->
+        <div id = "mySidenav" class = "sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Vuelvo a casa</a>
+            <a href="about.html">About tele mágica</a>
+            <a href="auth.html?mode=login">Login</a>
+            <a href="auth.html?mode=signup">Signup</a>
+            <a href="profile.html">Profile</a>
+            <a href="catalog.html?type=serie">Serie</a>
+            <a href="catalog.html?type=movie">Peliculas</a>
+            <a href="catalog.html?type=show">Espectáculos</a>
+        </div>
+        <span class = "menu-bar" onclick = "openNav()">&#9776;</span>
+        <!--Choose mode to show input boxes-->
+        <div id = "authContainer" class = "login-mode">
+            <!--Form--> 
+            <form id="authForm">
+                <!--Only for Signup-->
+                <div class="field signup-only">
+                    <input type = "text" id = "fullName" class = "name-style" placeholder = "Full Name" required>
+                </div>
+                <!--For both-->
+                <input type = "email" id = "email" class = "email-style" placeholder = "Email" required>
+                <input type = "password" id = "password" class = "pass-style" placeholder = "Password" required>
+                <!--Submit button-->
+                <button type = "submit" id = "submitBtn" class = "submitBtn-style" onclick = "handleAuthSubmit(event)">Submit</button>
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

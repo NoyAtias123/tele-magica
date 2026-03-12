@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--A title to the page-->
+        <title>Tele Mágica - Telenovelas</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title-display" class="main-title">Cargando...</h1>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Vuelvo a casa</a>
+            <a href="about.html">About tele mágica</a>
+            <a href="auth.html?mode=login">Login</a>
+            <a href="auth.html?mode=signup">Signup</a>
+            <a href="profile.html">Profile</a>
+            <a href="catalog.html?type=serie">Serie</a>
+            <a href="catalog.html?type=movie">Peliculas</a>
+            <a href="catalog.html?type=show">Espectáculos</a>
+        </div>
+        <span class="menu-bar" onclick="openNav()">&#9776;</span>
+
+        <div class="production-container">
+        
+        <div id="poster-container" style="margin-bottom: 20px;">
+            <img id="item-poster" src="" style="display:none; width: 250px; border-radius: 15px; margin: 0 auto; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+        </div>
+
+        <div id="seasons-container" class="control-group" style="display: none;">
+            <h3>Temporadas:</h3>
+            <div id="seasons-list" class="button-grid"></div>
+        </div>
+
+        <div id="episodes-container" class="control-group" style="display: none;">
+            <h3>Capítulos:</h3>
+            <div id="episodes-list" class="button-grid"></div>
+        </div>
+
+        <div id="video-container" class="video-section" style="display: none; margin-top: 20px;">
+            <iframe id="video-player" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="summary-section" class="summary-box" style="display: none;">
+            <h4 id="summary-title">Resumen:</h4>
+            <p id="episode-summary"></p>
+        </div>
+        
+        <button id ="back_button" class = "back-button">Atrás</button>
+        <script src="production.js"></script>
+    </body>
+</html>
